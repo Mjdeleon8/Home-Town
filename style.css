@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: beige;
+}
+
+.main-container {
+  height: 100vh;
+  position: relative;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.falls {
+  height: 458px;
+}
+
+.for-paragh {
+  width: 950px;
+  background-color: rgb(58, 125, 58);
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 40px;
+  border: solid black 3px;
+}
+
+.paragh {
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: justify;
+  text-indent: 30px;
+  color: bisque;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  backdrop-filter: blur(30px);
+  opacity: 0.7;
+  z-index: -100;
+}
+
+.big {
+  text-transform: uppercase;
+}
+
+.small {
+  text-transform: lowercase;
+}
